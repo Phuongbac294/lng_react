@@ -1,0 +1,34 @@
+.header {
+    background-color: aquamarine;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+}
+
+.headerMenu {
+    box-sizing: border-box;
+    width: 80%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerList {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.headerListItem {
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    font-weight: 500;
+}

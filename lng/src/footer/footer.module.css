@@ -1,0 +1,42 @@
+.footer {
+    background-color: aquamarine;
+    box-sizing: border-box;
+    width: 100%;
+    height: 110px;
+    margin: 0;
+    text-align: start;
+}
+
+.footerNav {    
+    box-sizing: border-box;
+    width: 80%;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+
+.footerH2 {
+    margin: 0 auto;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+.footerMenu {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerListItem {
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+}
+

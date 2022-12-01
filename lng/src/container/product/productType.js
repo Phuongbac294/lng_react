@@ -1,11 +1,13 @@
 import style from './product.module.css';
 import ProductItem from './productItem';
 
-function ProductType(prors) {
+
+const ProductType=(name, arr) =>{
+      
     return (
         <div className={style.productType}>
             <div className={style.productTypeMenu}>
-                <div className={style.menuItem}>Khí LPG</div>
+                <div className={style.menuItem}>{name}</div>
                 <form >
                     <select className={style.menuItemSelect}>
                         <option value='up' selech>Giá tăng dần</option>
@@ -14,10 +16,9 @@ function ProductType(prors) {
                 </form>              
             </div>
             <div className={style.productTypeList}>
-                <ProductItem />
-                <ProductItem />
-                <ProductItem />
-                <ProductItem />
+                {arr.map(item => 
+                    ProductItem(item)
+                )}
             </div>
         </div>
     )

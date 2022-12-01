@@ -9,8 +9,7 @@ function Header() {
                     <li className={style.headerListItem}>Sản phẩm</li>
                     <li className={style.headerListItem}>Liên hệ</li>
                 </ul>
-                <ul className={style.headerList}>
-                    <li className={style.headerListItem}>Tìm kiếm</li>
+                <ul className={style.headerList}>                    
                     <li className={style.headerListItem}>Đăng ký</li>
                     <li className={style.headerListItem}>Đăng nhập</li>                
                 </ul>

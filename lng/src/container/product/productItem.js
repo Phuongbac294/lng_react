@@ -13,7 +13,7 @@ const ProductItem = (prors) => {
                         <button className='btn'>Đặt hàng</button>
                         <button className='btn'>Chi tiết</button>
                     </div>
-                    <h6 >{prors.id}</h6>
+                    <h6 >Mã hàng :<span>{prors.id}</span></h6>
                     <h5 style={{color:'red'}}>{prors.name}</h5>
                 </div>
                 

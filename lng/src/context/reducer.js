@@ -1,5 +1,7 @@
 
 const initState = {
+    useNames: [],
+    use: '',
 
 }
 

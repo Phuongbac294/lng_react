@@ -1,4 +1,6 @@
+import './context.css';
 
+export const SET_INPUT = 'set_input';
 
 const gas = [
     {id: 'Gas-TANk-01', name:'Gas giao xe bồn', unit: 'vnd/kg', img: '../img/xe_bon.jpg', amount: 21000},
@@ -22,4 +24,11 @@ const gasValve = [
     {id: 'WSLT-5124', name:'Van an toàn bồn', unit: 'vnd/cái', img: '../img/WSLT-5124.gif', amount: 'Liên hệ'},
 ]
 
-export {gas, gasValve, cooker};
+const input = (type, input, pla ) => {
+    
+    return (
+        <input className='input' type={type} value={input} placeholder={pla} ></input>
+    )
+}
+
+export {gas, gasValve, cooker, input};

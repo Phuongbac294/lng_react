@@ -1,4 +1,5 @@
 import './context.css';
+import { useState } from 'react';
 
 export const SET_INPUT = 'set_input';
 
@@ -24,11 +25,14 @@ const gasValve = [
     {id: 'WSLT-5124', name:'Van an toàn bồn', unit: 'vnd/cái', img: '../img/WSLT-5124.gif', amount: 'Liên hệ'},
 ]
 
-const input = (type, input, pla ) => {
-    
-    return (
-        <input className='input' type={type} value={input} placeholder={pla} ></input>
-    )
-}
+const useInput = () => {
+    const [value, setValue] = useState("");
+  
+    const onChange = (event) => {
+      setValue(event.target.value);
+    };
+  
+    return { value: value, onChange: onChange };
+  };
 
-export {gas, gasValve, cooker, input};
+export {gas, gasValve, cooker, useInput};

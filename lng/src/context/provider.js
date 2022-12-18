@@ -12,21 +12,12 @@ function Provider({children}) {
         password: '123456',
         avatar : 'https://'}
     ])
-    const [user, setUser] = useState({
-        tel: "",
-        name:"",
-        avatar:"",
-        email:"",
-        password:"",
-        confirmPassword:"",
-        product: {}
-    })
 
   
     const value = {
         state, dispatch,
         userData, setUserData,
-        user, setUser,
+       
       
     }
     return (
